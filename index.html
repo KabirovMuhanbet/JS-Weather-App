@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="fonts/style.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Weather App</title>
+</head>
+
+<body id="page">
+
+   <div class="container">
+      <div class="current-info">
+
+         <div class="date-container">
+            <form class="search__city" onsubmit="return false;">
+               <input class="current__input" type="text" value="Bishkek">
+               <button class="search__btn">
+                  <span class="icon-serch"></span>
+               </button>
+            </form>
+            <div class="date" id="date">
+               Monday, 25-may
+            </div>
+
+            <div class="others" id="current-weather-items">
+
+            </div>
+         </div>
+         <div class="time-zone-lang">
+            <div class="place-container">
+               <div class="time-zone" id="time-zone">Asia/Bishkek</div>
+            </div>
+            <div id="google_translate_element_id"></div>
+         </div>
+      </div>
+
+
+   </div>
+
+   <div class="future-forecast">
+      <div class="today" id="current-temp">
+
+      </div>
+
+      <div class="weather-forecast" id="weather-forecast">
+
+      </div>
+   </div>
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ=="
+      crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+   <script src="js/translate.js"></script>
+   <script src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
